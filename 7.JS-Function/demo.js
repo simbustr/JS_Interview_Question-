@@ -15,3 +15,22 @@
 // Arrow functions do not have their own arguments object;
 // Arrow functions are more concise and have implicit return when there is no curly braces {}.
 
+
+// Example 1: Simple Function Returning Another Function
+// Example 2: Higher-Order Function
+// Example 3: Currying
+// Example 4: Closures
+// Example 5: function expression
+
+
+function abc() {
+    return 20;
+  }
+  console.log(abc(), "return");
+
+
+  var myFunctionExpression = function() {
+    console.log("Hello, I am a function expression!");
+  };
+  
+  myFunctionExpression(); // Output: "Hello, I am a function expression!"
