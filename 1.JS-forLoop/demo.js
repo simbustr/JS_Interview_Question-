@@ -1,46 +1,75 @@
-// Variable is named storage location that can be hold a value
-// variable are used to store the data that can be accessed and manipulated throught a program
+// Basic for Loop Example
+// Iterating Over an Array
+// Using for Loop with Objects
+// Using Object.entries
+// Nested for Loop
+// Looping through an Array of Objects
 
+// for (let index = 0; index < array.length; index++) {
+//   const element = array[index];
+// }
 
-// var is function-scoped
-// let is block-scoped
-// Const is block-scoped,
+// for (const key in object) {
+//   if (Object.hasOwnProperty.call(object, key)) {
+//     const element = object[key];
+//   }
+// }
 
+// for (const iterator of object) {
+// }
 
-// var Example
-// The variable a is reassigned to the string "simbu"
-// Re-declaration: Can be re-declared within the same scope.
-var a =10;
-a="simbu"      
-console.log(a)  
+// for (var i = 1; i <= 5; i++) {
+//   console.log(i);
+// }
 
-var y = 10;
-var y = 20;  
+// for (let j = 1; j <= 5; j++) {
+//     console.log(j);
+//   }
 
+// Assignment to constant variable.
+//   for (const k = 1; k <= 5; k++) {
+//     console.log(k);
+//   }
 
+// const fruits = ['Apple', 'Banana', 'Cherry', 'Date'];
 
+// for(let i =0 ; i<fruits.length; i++){
+//     console.log(fruits[i])
+// }
 
+// const user = {
+//     id: 1,
+//     name: 'Simbu',
+//     username: 'simbu.dev',
+//     email: 'simbu@example.com'
+//   };
 
-// let Example
-// The variable b is reassigned to the string "ashok"
-// let x = 10; // Re-declaration: Cannot be re-declared within the same scope.
-// let x = 20; // SyntaxError: Identifier 'x' has already been declared
-let b =20;
-b="ashok"     
-console.log(b)
+//   const keys = Object.keys(user)
 
+//   for (let i = 0 ; i<keys.length ; i++){
+//     console.log(`${keys[i]} : ${user[keys[i]]}`)
+//   }
 
-// const Example
-// Re-declaration: Cannot be re-declared within the same scope.
-// TypeError: Assignment to constant variable.
-const ab = 100
-ab=2000
-console.log(ab)
+//   const matrix = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9]
+//   ];
 
+//   for(let i=0 ; i<matrix.length ; i++){
+//     for(let j=0 ; j<matrix[i].length ; j++){
+//         console.log(matrix[i][j])
+//     }
+//   }
 
+const users = [
+    { id: 1, name: 'Simbu', username: 'simbu.dev', email: 'simbu@example.com' },
+    { id: 2, name: 'Anjali', username: 'anjali.dev', email: 'anjali@example.com' },
+    { id: 3, name: 'Raj', username: 'raj.dev', email: 'raj@example.com' },
+    { id: 4, name: 'Arun', username: 'arun.dev', email: 'arun@example.com' }
+  ];
+  
 
-
-
-
-
-
+for(let i = 0 ; i<users.length ; i++){
+    console.log(users[i]);
+}
